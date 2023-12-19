@@ -104,7 +104,7 @@ Error generating stack: `+o.message+`
                         [&>svg]:hover:scale-125 [&>svg]:duration-300 
                         active:bg-green-700 active:shadow-none active:translate-y-0 active:duration-0
                         ${l?"[&>svg]:fill-white":"[&>svg]:fill-none"}
-                    `,onClick:o,children:a.jsx(Wh,{className:"m-auto w-1/2 h-1/2 stroke-2",stroke:"white"})})};function ou({recipe:e}){let t=`./recipe/${e.idMeal}`;return a.jsxs("div",{className:`relative flex flex-col justify-around 
+                    `,onClick:o,children:a.jsx(Wh,{className:"m-auto w-1/2 h-1/2 stroke-2",stroke:"white"})})};function ou({recipe:e}){let t=`recipe/${e.idMeal}`;return a.jsxs("div",{className:`relative flex flex-col justify-around 
         min-w-[250px] max-w-[18rem] aspect-square 
         shadow-xl rounded-[2.5rem] 
         m-5 pb-5
