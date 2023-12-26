@@ -102,7 +102,9 @@ Error generating stack: `+o.message+`
                                                             rounded-2xl shadow-2xl shadow-green-200 p-4 h-48 aspect-square
                                                             [&>div]:hover:bg-green-500`,children:[a.jsx("div",{className:`flex aspect-square rounded-full
                                     bg-green-100 items-center`,children:a.jsx("img",{className:"h-16 justify-self-center object-cover",src:e.strCategoryThumb,alt:"food"})}),a.jsx("h2",{className:"text-center font-semibold font-Inter mt-2.5",children:e.strCategory})]})})}function Ml(e){const[t,n]=k.useState([]),[r,l]=k.useState(!0),[o,i]=k.useState(null);return k.useEffect(()=>{(async()=>{try{const s=await fetch(e);if(!s.ok)throw Error("Could not fetch the data for that resource");const c=await s.json();n(c),l(!1)}catch(s){i(s.message),l(!1)}})()},[e]),{data:t,isLoading:r,error:o}}function $h(){let{data:e,isLoading:t,error:n}=Ml("https://www.themealdb.com/api/json/v1/1/categories.php");return a.jsxs("section",{children:[a.jsx("h2",{className:`font-Inter font-bold 
-                        text-red-500 text-center text-xs lg:text-base`,children:"CUSTOMER FAVORITES"}),a.jsx("h1",{className:"font-extrabold text-4xl font-Inter text-center mb-5 xl:text-6xl",children:"Categories"}),a.jsx("div",{className:`flex flex-wrap justify-around w-screen h-full
+                        text-red-500 text-center text-xs lg:text-base`,children:"CUSTOMER FAVORITES"}),a.jsx("h1",{className:`font-extrabold text-4xl font-Inter text-center mb-5 
+                        lg:text-3xl
+                        2xl:text-6xl`,children:"Categories"}),a.jsx("div",{className:`flex flex-wrap justify-around w-screen h-full
             lg:mx-5 p-8 lg:px-20`,children:e.categories&&e.categories.map(r=>a.jsx(Ah,{data:r},r.idCategory))})]})}function Bh({handleSelectLetter:e}){let t=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];return a.jsx("ul",{className:`grid grid-cols-13 place-items-center 
         bg-green-300 w-full px-2
         md:flex md:justify-around`,children:t.map(n=>a.jsx("li",{className:`text-white 
@@ -130,15 +132,17 @@ Error generating stack: `+o.message+`
                             2xl:grid-cols-4`,children:l.map(o=>a.jsx(ou,{recipe:o},o.idMeal))});if(l===null&&!n&&!r)return a.jsx("div",{children:a.jsxs("div",{className:"flex flex-col md:flex-row justify-center items-center mt-5",children:[a.jsx("a",{className:"text-gray-200",href:"https://www.freepik.com/free-photo/cutlery-overhead-wooden-dining-food_1090334.htm#query=empty%20plate&position=4&from_view=keyword&track=ais",children:a.jsx("img",{className:"md:max-h-28 mr-2",src:"./images/empty-plate.png"})}),a.jsx("div",{className:"text-2xl font-Inter pt-2 text-center",children:"No meals found here"})]})})};function Zh(){const[e,t]=k.useState("A"),n=r=>{t(r)};return a.jsxs("section",{children:[a.jsx("h2",{className:`font-Inter font-bold 
                          text-red-500 text-center text-xs
                          lg:text-base`,children:"SPECIAL DISHES"}),a.jsx("h1",{className:` font-Inter font-extrabold text-4xl 
-            text-center 
-            mx-5 mb-5 
-            xl:text-6xl
+                        text-center 
+                        mx-5 mb-5 
+                        lg:text-3xl
+                        2xl:text-6xl
             `,children:"All recipes"}),a.jsx(Bh,{handleSelectLetter:n}),a.jsx(Yh,{currentLetter:e})]})}function Gh(){return a.jsxs("section",{children:[a.jsx("h1",{className:`font-Inter font-bold 
                         text-red-500 text-center text-xs
                         lg:text-base
                         `,children:"ABOUT US"}),a.jsx("h2",{className:`font-Inter font-extrabold 
                         text-center text-xl pt-2 pb-5 px-4
-                        xl:text-6xl
+                        lg:text-3xl
+                        2xl:text-6xl
                         `,children:"The only thing we are serious about is food."}),a.jsx("div",{className:"",children:a.jsxs("div",{className:"flex flex-col justify-center items-center",children:[a.jsx("div",{className:`pt-2 px-6
                                     md:px-10`,children:a.jsx("p",{className:"font-Inter  text-justify text-base lg:text-xl",children:"Beyond a mere passion for cuisine, we constitute a trio of dedicated students who have united with a singular purpose: to establish a culinary sanctuary where flavors and dreams harmoniously converge. Our mission is straight forward yet profound: to foster human connection through the delight of gastronomy. We strive to be a wellspring of inspiration, a dependable resource, and a culinary refuge for all those who yearn to explore and relish their cherished dishes. Our vision encompasses a world in which cooking becomes a communal adventure, wherein each recipe evolves into a journey filled with revelations. We aspire to serve as an unwavering companion in your quest for flavors, a place where you can encounter all your preferred meals, while simultaneously providing a platform to experiment and explore novel culinary pleasures. Our aim is to make cooking accessible and enjoyable for all, irrespective of one's culinary expertise. Join us on this gastronomic odyssey and uncover the enchantment embedded within each recipe. Welcome to our culinary haven, where dreams simmer slowly, and flavors transform into indelible memories."})}),a.jsxs("div",{className:`flex flex-row w-full justify-between px-5 pt-3
                         md:pt-5
